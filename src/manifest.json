@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Gherkin Highlighter",
+  "description": "Highlights Gherkin keywords in a Shortcut story description",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.shortcut.com/*/story/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_icon": "icons8-cucumber-flaticons-lineal-color-32.png"
+  }
+}
